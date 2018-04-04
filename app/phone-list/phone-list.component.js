@@ -1,8 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var PhoneListController = /** @class */ (function () {
-    function PhoneListController(Phone) {
-        this.phones = Phone.query();
+    function PhoneListController(phone) {
+        var _this = this;
+        phone.query().subscribe(function (phones) {
+            _this.phones = phones;
+        });
         this.orderProp = 'age';
     }
+    //query: string;
     PhoneListController.$inject = ['Phone'];
     return PhoneListController;
 }());
