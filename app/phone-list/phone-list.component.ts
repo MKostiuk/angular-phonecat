@@ -1,5 +1,4 @@
 declare var angular: angular.IAngularStatic;
-import { downgradeComponent } from "@angular/upgrade/static";
 import { Phone, PhoneData } from '../core/phone/phone.service';
 import { Component } from '@angular/core';
 
@@ -52,14 +51,4 @@ export class PhoneListComponent {
       return phones;
     }
 }
-
-
-
-// Register `phoneList` component, along with its associated controller and template
-angular.
-  module('phoneList')
-    .directive(
-        'phoneList',
-        downgradeComponent({component: PhoneListComponent}) as angular.IDirectiveFactory
-    );
 

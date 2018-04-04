@@ -11,7 +11,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
-var static_1 = require("@angular/upgrade/static");
 require("rxjs/add/operator/map");
 var Phone = /** @class */ (function () {
     function Phone(http) {
@@ -32,6 +31,4 @@ var Phone = /** @class */ (function () {
     return Phone;
 }());
 exports.Phone = Phone;
-angular.module('core.phone')
-    .factory('Phone', static_1.downgradeInjectable(Phone));
 //# sourceMappingURL=phone.service.js.map

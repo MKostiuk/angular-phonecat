@@ -9,7 +9,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var static_1 = require("@angular/upgrade/static");
 var phone_service_1 = require("../core/phone/phone.service");
 var core_1 = require("@angular/core");
 var PhoneListComponent = /** @class */ (function () {
@@ -63,8 +62,4 @@ var PhoneListComponent = /** @class */ (function () {
     return PhoneListComponent;
 }());
 exports.PhoneListComponent = PhoneListComponent;
-// Register `phoneList` component, along with its associated controller and template
-angular.
-    module('phoneList')
-    .directive('phoneList', static_1.downgradeComponent({ component: PhoneListComponent }));
 //# sourceMappingURL=phone-list.component.js.map
